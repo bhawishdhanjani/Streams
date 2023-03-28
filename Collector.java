@@ -1,6 +1,5 @@
 package Streams;
 
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.function.Function;
@@ -42,6 +41,7 @@ public class Collector {
                 .map(m -> m.getName())
                 .collect(Collectors.joining(","));
         System.out.println(joining);
+
 
 
     }
