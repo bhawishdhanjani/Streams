@@ -16,6 +16,7 @@ public class CreatingStreamsDemo {
 //        Stream of arbitrary number of object
         var stream1 = Stream.of(1,2,3);
         stream1.forEach(n-> System.out.println(n));
+
 //        Generating Infinite Stream
         var stream2 = Stream.generate(()->Math.random());
         stream2.limit(10).forEach(n-> System.out.println(n));

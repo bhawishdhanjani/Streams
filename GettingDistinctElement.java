@@ -1,9 +1,8 @@
 package Streams;
 
 import java.util.List;
-import java.util.function.Predicate;
 
-public class FilteringElements {
+public class GettingDistinctElement {
     public static void show(){
         List<Movie> movies = List.of(
                 new Movie("a",10),
@@ -11,10 +10,6 @@ public class FilteringElements {
                 new Movie("c",15),
                 new Movie("d",20)
         );
-        Predicate<Movie> isPopular = movie -> movie.getLikes()>10;
-        movies.stream()
-                .filter(isPopular)
-                .forEach(movie -> System.out.println(movie));
-
+     movies.stream().map(Movie::getLikes).distinct().forEach(System.out::println);
     }
 }

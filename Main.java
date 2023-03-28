@@ -2,6 +2,6 @@ package Streams;
 
 public class Main {
     public static void main(String[] args) {
-        CreatingStreamsDemo.show();
+        Collector.show();
     }
 }
